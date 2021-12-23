@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  .header {}
+  .top-social {
+    justify-content: flex-end;
+  }
+  .top-address {
+    display: none;
+  }
+  .search {
+    padding-right: 0;
+    &-form {
+      max-width: 100%;
+    }
+  }
+  .actions-header {
+    display: none;
+  }
+}

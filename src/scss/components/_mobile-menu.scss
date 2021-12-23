@@ -1,0 +1,51 @@
+.mobile-menu {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: none;
+  &__list {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &__link {
+    font-size: 10px;
+    line-height: 14 / 10 * 100%;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $colorMain;
+    &--active {
+      .mobile-menu__icon--stroke {
+        stroke: $colorAccent;
+      }
+      .mobile-menu__icon--fill {
+        fill: $colorAccent;
+      }
+      span {
+        color: $colorAccent;
+      }
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-bottom: 3px;
+    &--stroke {
+      fill: transparent;
+      stroke: $colorMain
+    }
+    &--fill {
+      fill: $colorMain;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/homepage";
+
+
+@import "./components/mobile-menu";
+@import "./components/catalog";
+
+
+
+
+// подключения media запросов
+@import "./media/media-header";
+@import "./media/media-menu";
+@import "./media/media-catalog";
+

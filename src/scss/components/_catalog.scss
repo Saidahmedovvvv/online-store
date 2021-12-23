@@ -1,0 +1,67 @@
+.catalog {
+  flex: 0 0 280px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: none;  
+  &-list {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      display: flex;
+      align-items: center;
+      min-height: 50px;
+      padding: 10px 20px;
+      transition: background 0.3s ease-in-out;
+      @media (any-hover: hover) {
+        &:hover {
+          background: rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+    }
+    &__link {
+      font-size: 18px;
+      line-height: 24 / 18 * 100%;
+      color: $colorMain;
+      transition: color 0.3s ease-in-out;
+      
+      @media (any-hover: hover) {
+        &:hover {
+          color: $colorAccent;
+        }
+      }
+    }
+    &__sublinks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__sublink {
+      font-size: 12px;
+      color: $colorGray;
+      transition: color 0.3s ease-in-out;
+      @media (any-hover: hover) {
+        &:hover {
+          color: $colorAccent;
+        }
+      }
+    }
+    &__img {
+      flex: 0 1 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 25px;
+    }
+    &__icon {
+      width: 25px;
+      height: 25px;
+      fill: $colorAccent;
+    }
+  }
+  
+}
